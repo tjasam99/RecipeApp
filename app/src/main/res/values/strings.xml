@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="addRecipe">Add recipe</string>
+    <string name="breakfast">breakfast</string>
+    <string name="lunch">lunch</string>
+    <string name="dinner">dinner</string>
+    <string name="dessert">dessert</string>
+    <string name="snack">snack</string>
+    <string name="recipeName">Recipe name</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="search">Search ingredients...</string>
+    <string name="chooseMeal">Meal type:</string>
+    <string name="all">all</string>
+
+    <string-array name="mealTypes_array">
+        <item>@string/breakfast</item>
+        <item>@string/lunch</item>
+        <item>@string/dinner</item>
+        <item>@string/dessert</item>
+        <item>@string/snack</item>
+    </string-array>
+
+    <string-array name="filterMealTypes_array">
+        <item>@string/all</item>
+        <item>@string/breakfast</item>
+        <item>@string/lunch</item>
+        <item>@string/dinner</item>
+        <item>@string/dessert</item>
+        <item>@string/snack</item>
+    </string-array>
+
+</resources>

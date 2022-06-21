@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditRecipeActivity">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:id="@+id/recipeImageIV"
+                android:src="@drawable/uploadimage"
+                >
+
+            </ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NewRecipeStyle"
+                android:theme="@style/NewRecipeStyle"
+                android:textColorHint="@color/primary"
+                app:boxStrokeColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/recipeName">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@null"
+                android:id="@+id/recipeNameET"
+                >
+
+            </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/mealTypeS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NewRecipeStyle"
+                android:theme="@style/NewRecipeStyle"
+                android:textColorHint="@color/primary"
+                app:boxStrokeColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/ingredients">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:id="@+id/recipeIngredientsET"
+                >
+
+            </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NewRecipeStyle"
+                android:theme="@style/NewRecipeStyle"
+                android:textColorHint="@color/primary"
+                app:boxStrokeColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/instructions">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:id="@+id/recipeInstructionsET"
+                >
+
+            </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Select image"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:onClick="selectImageBTN"
+                >
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Update recipe"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                android:onClick="updateRecipeBTN"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
